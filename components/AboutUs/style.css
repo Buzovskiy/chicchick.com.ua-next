@@ -1,0 +1,184 @@
+.about-us {
+    margin-top: 200px;
+}
+
+.about-us .section-heading {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.about-us-logo {
+    width: 349px;
+}
+
+.about-us-logo img {
+    width: 100%;
+}
+
+.about-us-heading-text {
+    margin: 0 20px;
+    align-self: center;
+}
+
+.about-us-square-triangle {
+    width: 125px;
+}
+
+.about-us .section-blocks__row {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 30px;
+    grid-column-gap: 20px;
+    position: relative;
+}
+
+.about-us .section-blocks__row > div {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.about-us .section-blocks__row.row1 {
+    grid-template-columns: 1fr 240px 240px;
+}
+
+.about-us .section-blocks__row.row1 .square-red {
+    position: absolute;
+    top: -28px;
+    width: 70px;
+    left: 50px;
+}
+
+.about-us .section-blocks__row.row2 {
+    grid-template-columns: 240px 1fr 240px;
+}
+
+.about-us .section-blocks__row.row3 {
+    grid-template-columns: 1fr 240px;
+}
+
+.about-us .section-blocks__row.row4 {
+    grid-template-columns: 260px 240px 1fr;
+}
+
+.about-us .section-blocks {
+    font-family: "Evolventa", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.about-us .text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    line-height: 1.7;
+}
+
+.about-us .section-blocks__row .highlighted {
+    font-family: "Shantell Sans", cursive;
+    font-size: 30px;
+}
+
+/*row 1*/
+.about-us .row1__first {
+    background-color: #C0E0F7;
+    color: #381B3F;
+    padding: 40px 60px;
+}
+
+.about-us .row1__first .highlighted {
+    color: #E32C72;
+}
+
+.about-us .row1__second {
+    position: relative;
+}
+
+.about-us .row1__second img {
+    position: absolute;
+    bottom: 0;
+}
+
+.about-us .row1__third {
+    background-color: #FFF200;
+    color: #381B3F;
+}
+
+.about-us .row1__third .highlighted {
+    color: #823E93;
+}
+
+/*row 2*/
+.about-us .row2__second {
+    background-color: #8A4170;
+    color: #FFC1E9;
+}
+
+.about-us .row2__second .highlighted {
+    color: #FFF200;
+}
+
+/*row 3*/
+.about-us .row3__first {
+    background-color: #FFF200;
+    color: #381B3F;
+    padding: 40px 10%;
+}
+
+.about-us .row3__first .highlighted {
+    color: #E32C72;
+}
+
+.about-us .row3__second {
+    background-color: #E32C72;
+    color: #FFF200;
+}
+
+/*row 4*/
+.about-us .row4__first {
+    background-color: #8A4170;
+    color: #FFF200;
+    position: relative;
+}
+
+.about-us__triangle-right {
+    position: absolute;
+    width: 70px;
+    bottom: -3px;
+    left: -30px;
+}
+
+.about-us .row4__first .highlighted {
+    color: #FFF200;
+}
+
+.about-us .row4__second {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us .row4__second img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+}
+
+.about-us .row4__third {
+    background-color: #C0E0F7;
+    color: #381B3F;
+}
+
+.about-us .row4__third .highlighted {
+    color: #E32C72;
+}
+
+.about-us .about-us-stripe {
+    position: absolute;
+    width: 481px;
+    right: -151px;
+    bottom: 17px;
+}

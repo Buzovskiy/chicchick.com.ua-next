@@ -1,0 +1,37 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-stripe-vertical {
+    position: absolute;
+    height: 481px;
+    top: -29px;
+    left: -117px;
+}
+
+.site-nav, .header-wrapper .telephone a {
+    color: #FDEB03;
+}
+
+.telephone a:hover {
+    color: white;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 45px;
+}
+
+.site-nav, .header-wrapper .telephone {
+    font-family: "Shantell Sans", cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.site-nav, .header-wrapper .telephone {
+    display: flex;
+    align-items: center;
+}

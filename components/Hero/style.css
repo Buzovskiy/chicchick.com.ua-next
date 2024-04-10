@@ -1,0 +1,90 @@
+.hero-left{
+    position: relative;
+    z-index: 2;
+}
+.hero-left__tagline, .hero-left__tagline-2 {
+    color: #FFC1E9;
+    font-family: "Evolventa", sans-serif;
+}
+
+.hero-left__tagline-2 {
+    font-size: 30px;
+    line-height: 1.9;
+    margin: 35px 0;
+}
+
+.hero-left__tagline {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 35px 0;
+}
+
+.hero-left__button .site-btn {
+    width: 456px;
+    height: 76px;
+    font-size: 35px;
+}
+
+.hero-left__working-hours span {
+    color: #FFF200;
+    font-family: "Shantell Sans", cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hero-left__working-hours__time img {
+    width: 69px;
+    height: 58px;
+}
+
+.hero-left__working-hours__location .img-location {
+    width: 60px;
+    height: 69px;
+}
+
+.hero-left__working-hours__location .img-arrow {
+    width: 39px;
+    height: 16px;
+}
+
+.hero-left__working-hours__time,
+.hero-left__working-hours__location {
+    display: flex;
+    align-items: center;
+}
+
+.hero-left__working-hours__location {
+    margin-left: 80px;
+}
+
+.hero-left__working-hours {
+    display: flex;
+}
+
+.hero-left__button {
+    margin-top: 70px;
+}
+
+.hero-right__hero-girl {
+    width: 100%;
+}
+
+.hero-left__logo {
+    margin-top: 115px;
+}
+
+.hero-bottom{
+    position: relative;
+}
+
+.hero-bottom__hero-stripe-bottom {
+    max-width: unset;
+    position: absolute;
+    width: 115%;
+    top: -128px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

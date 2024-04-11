@@ -4,7 +4,7 @@
 }
 .hero-left__tagline, .hero-left__tagline-2 {
     color: #FFC1E9;
-    font-family: "Evolventa", sans-serif;
+    font-family: var(--evolventa-ragular-font), sans-serif;
 }
 
 .hero-left__tagline-2 {
@@ -27,7 +27,7 @@
 
 .hero-left__working-hours span {
     color: #FFF200;
-    font-family: "Shantell Sans", cursive;
+    font-family: var(--shantell-sans-font), cursive;
     text-transform: uppercase;
     font-size: 25px;
     margin-left: 10px;

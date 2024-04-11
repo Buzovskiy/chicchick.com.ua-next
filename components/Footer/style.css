@@ -56,14 +56,14 @@
 }
 
 .footer__contacts__heading {
-    font-family: "Shantell Sans", cursive;
+    font-family: var(--shantell-sans-font), cursive;
     color: #8A4170;
     font-size: 30px;
     text-transform: uppercase;
 }
 
 .footer__location {
-    font-family: "Evolventa", sans-serif;
+    font-family: var(--evolventa-ragular-font), sans-serif;
     font-size: 22px;
 
     text-transform: uppercase;
@@ -85,5 +85,5 @@
 .footer .designer a {
     color: #8A4170;
     font-size: 18px;
-    font-family: "Evolventa", sans-serif;
+    font-family: var(--evolventa-ragular-font), sans-serif;
 }

@@ -1,0 +1,113 @@
+.team__photo-wrapper {
+    position: relative;
+}
+
+.team__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.team__description-wrapper {
+    position: relative;
+}
+
+.team__bg-front {
+    position: absolute;
+    top: 51%;
+    left: 53%;
+    width: 92%;
+    transform: translate(-50%, -50%);
+}
+
+.team__description-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.team__stripe{
+    width: 150px;
+    border-bottom: solid 3px #E32C72;
+    justify-self: center;
+    align-self: center;
+    margin-top: 25px;
+}
+
+.team__triangle,
+.team__square {
+    position: absolute;
+    width: 109px;
+}
+
+.team__triangle {
+    top: 11px;
+    left: 119px;
+}
+
+.team__square {
+    bottom: 12px;
+    right: 78px;
+}
+
+.team__description-text {
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 20px;
+    color: #FFF200;
+    line-height: 1.7;
+    position: absolute;
+    width: 72%;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team__description__heading {
+    font-family: var(--shantell-sans-font), cursive;
+    font-size: 35px;
+    color: #E32C72;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.team__item:not(:last-child) {
+    margin-bottom: 150px;
+}
+
+.row-even .team__photo-bg {
+    transform: scaleX(-1);
+}
+
+.row-even .team__photo {
+    transform: scaleX(-1) translate(50%, -50%);
+}
+
+.row-even .team__bg-yellow {
+    transform: scaleX(-1);
+}
+
+.row-even .team__bg-front{
+    transform: scaleX(-1) translate(50%, -50%);
+}
+
+.row-even .team__bg-front{
+    top: 52%;
+    left: 47%;
+}
+
+.row-even .team__triangle{
+    left: unset;
+    right: 119px;
+}
+
+.row-even .team__square{
+    right: unset;
+    left: 84px;
+}
+
+.row-even .team__description__heading{
+    text-align: left;
+}

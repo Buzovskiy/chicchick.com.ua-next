@@ -1,0 +1,24 @@
+.why-us .blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+
+.why-us .block-wrapper{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-column-gap: 40px;
+}
+
+.why-us .block-text {
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #FFF200;
+    line-height: 1.6;
+}
+
+.why-us .block-wrapper img{
+    width: 52px;
+}

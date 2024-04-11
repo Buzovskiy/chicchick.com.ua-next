@@ -22,7 +22,7 @@
 }
 
 .our-service .block .title {
-    font-family: "Shantell Sans", cursive;
+    font-family: var(--shantell-sans-font), cursive;
     font-size: 35px;
     color: #FFF200;
     text-align: center;

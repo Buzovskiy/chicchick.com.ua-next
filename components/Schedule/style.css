@@ -1,0 +1,116 @@
+.schedule__wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 40px;
+}
+
+.schedule__subtitle {
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFF200;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.schedule__salon-btn-wrapper {
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.schedule__salon-btn-wrapper .site-btn {
+    width: 100%;
+    background: unset;
+    color: #FFF200;
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 22px;
+    text-transform: none;
+    border: solid 1px #E32C72;
+    height: 76px;
+}
+
+.schedule__salon-btn-wrapper .site-btn.active,
+.schedule__salon-btn-wrapper .site-btn:hover {
+    background-color: #8A4170;
+    border: unset;
+}
+
+.schedule__book-visit .schedule__subtitle {
+    color: #E32C72;
+}
+
+.schedule__book-visit .site-btn {
+    width: 100%;
+    background: #FFF200;
+    color: #381B3F;
+    font-family: var(--shantell-sans-font), cursive;
+    font-size: 35px;
+    height: 76px;
+}
+
+.schedule__book-visit .site-btn:hover {
+    background-color: #8a4170;
+}
+
+.schedule__choose-salon {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule__book-visit {
+    margin-top: auto;
+}
+
+.schedule__days-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule__days-list .site-btn {
+    width: 72px;
+    height: 80px;
+    background: unset;
+    color: #FFF200;
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 22px;
+    text-transform: none;
+    border: solid 1px #E32C72;
+    position: relative;
+}
+
+.schedule__days-list .site-btn.active,
+.schedule__days-list .site-btn:hover {
+    background-color: #8A4170;
+    border: unset;
+}
+
+.schedule__days-list .site-btn.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 50px;
+    background-image: url(/public/img/triangle-right.png);
+    background-size: auto 50px;
+    z-index: 1;
+    right: -19px;
+    bottom: -22px;
+}
+
+.schedule__masters-wrapper{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.schedule .master-title {
+    color: #E32C72;
+    font-family: var(--shantell-sans-font), cursive;
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+

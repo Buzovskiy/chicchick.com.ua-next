@@ -1,0 +1,38 @@
+.services-list .section-heading.first {
+    margin-top: 0px;
+}
+
+.services-list .description-wrapper {
+    font-family: "Evolventa", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.services-list .section-top p {
+    color: #E32C72;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.services-list .section-bottom li {
+    color: #EFBED4;
+    margin-bottom: 30px;
+    list-style-type: disc;
+    line-height: 1.4;
+}
+
+.services-list .section-bottom img {
+    width: 50%;
+    float: right;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.services-list .first-col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-list .image-1-wrapper {
+    flex-grow: 0.5;
+}

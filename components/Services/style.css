@@ -1,0 +1,35 @@
+.service-item{
+    border: solid 1px #8A4170;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.service-item .image-wrapper img{
+    width: 100%;
+}
+
+.service-item .heading {
+    font-family: var(--shantell-sans-font), cursive;
+    color: #FFF200;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.service-item .description {
+    color: #EFBED4;
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.service-item .price {
+    color: #E32C72;
+    font-family: var(--shantell-sans-font), cursive;
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 0;
+}

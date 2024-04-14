@@ -1,0 +1,20 @@
+.breadcrumb {
+    font-family: var(--shantell-sans-font), cursive;
+    color: #E32C72;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.breadcrumb .wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb img{
+    width: 20px;
+}
+
+.breadcrumb a{
+    padding-right: 10px;
+}

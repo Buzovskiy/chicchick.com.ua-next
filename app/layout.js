@@ -23,18 +23,3 @@ export default function RootLayout({children}) {
       </html>
    );
 }
-
-// export default function RootLayout({children}) {
-//    return (
-//       <html lang="uk">
-//       <head>
-//          <link rel="stylesheet" href="https://buy.ticketforevent.com/css/embreg.css"/>
-//       </head>
-//       <body className={`${myFont.variable} ${montserrat.variable} font-sans`}>
-//       <Header/>
-//       {children}
-//       <Footer/>
-//       </body>
-//       </html>
-//    );
-// }

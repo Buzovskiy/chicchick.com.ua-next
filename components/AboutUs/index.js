@@ -35,7 +35,7 @@ const AboutUs = () => {
                   </div>
                   <div className="row4__second"><img src="/img/about-us/about-us-row-4.png" alt=""/></div>
                   <div className="row4__third text-block"><div><span className="highlighted">ми віримо</span>, що візит до перукаря це не тільки шлях до створення кращого вигляду та комфорту, але і ключ до самоповаги та успішного образу</div></div>
-                  <img className="about-us-stripe" src="/img/about-us/stripe.png" alt=""/>
+                  {/*<img className="about-us-stripe" src="/img/about-us/stripe.png" alt=""/>*/}
                </div>
             </div>
          </div>

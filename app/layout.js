@@ -1,6 +1,7 @@
 import {ShantellSans, EvolventaRegular} from "@/app/fonts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 import '@/styles/bootstrap-grid.css';
 import "@/styles/reset.css";
@@ -16,9 +17,16 @@ export default function RootLayout({children}) {
    return (
       <html lang="uk">
       <body className={`${EvolventaRegular.variable} ${ShantellSans.variable}`}>
+      <Image
+         width={92}
+         height={481}
+         src="/img/body-stripe-vertical.png"
+         alt="Дитяча перукарня"
+         className="body-stripe-vertical"
+      />
       <Header/>
       {children}
-      <Footer/>
+      {/*<Footer/>*/}
       </body>
       </html>
    );

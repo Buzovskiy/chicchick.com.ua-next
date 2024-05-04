@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -16,10 +16,11 @@ body {
     text-transform: uppercase;
     border-radius: 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .site-btn:hover {
-    background-color: #FFF200;
+    background-color: white;
 }
 
 .section-heading {
@@ -37,4 +38,32 @@ body {
 
 .icon-shadow:hover {
     filter: drop-shadow(0px 0px 4px red);
+}
+
+.body-stripe-vertical {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+@media (max-width: 1400px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    .body-stripe-vertical {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    body, html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) {
+    body, html {
+        font-size: 12px;
+    }
 }

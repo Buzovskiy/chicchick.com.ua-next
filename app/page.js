@@ -14,15 +14,15 @@ export default function Home() {
    return (
       <Fragment>
          <Hero/>
-         <AboutUs/>
-         <OurService/>
-         <BookCall/>
-         <WhyUs/>
-         <Gift/>
-         <Team/>
-         <Schedule/>
-         <FAQ/>
-         <GalleryMain/>
+         {/*<AboutUs/>*/}
+         {/*<OurService/>*/}
+         {/*<BookCall/>*/}
+         {/*<WhyUs/>*/}
+         {/*<Gift/>*/}
+         {/*<Team/>*/}
+         {/*<Schedule/>*/}
+         {/*<FAQ/>*/}
+         {/*<GalleryMain/>*/}
       </Fragment>
    );
 }

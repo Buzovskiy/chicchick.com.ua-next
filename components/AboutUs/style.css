@@ -303,18 +303,26 @@
     }
 
     .about-us .row2 img,
-    .about-us .row4__second img{
+    .about-us .row4__second img {
         width: auto;
         max-width: unset;
         height: 100%;
     }
 
-    .about-us .section-heading{
+    .about-us .section-heading {
         font-size: 1.6rem;
         margin: 50px 0;
     }
 
-    .about-us-logo{
+    .about-us-logo {
         width: 166px;
+    }
+
+    .about-us .section-blocks__row.row4 > div {
+        height: 350px;
+    }
+
+    .about-us .section-blocks__row.row4 .row4__first {
+        height: 200px;
     }
 }

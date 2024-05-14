@@ -14,7 +14,7 @@ export default function Home() {
    return (
       <Fragment>
          <Hero/>
-         {/*<AboutUs/>*/}
+         <AboutUs/>
          {/*<OurService/>*/}
          {/*<BookCall/>*/}
          {/*<WhyUs/>*/}

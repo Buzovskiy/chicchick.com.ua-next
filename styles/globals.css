@@ -27,7 +27,7 @@ body {
     font-family: var(--shantell-sans-font), cursive;
     color: #FFF200;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 2.188rem;
     text-align: center;
     margin: 70px 0;
 }

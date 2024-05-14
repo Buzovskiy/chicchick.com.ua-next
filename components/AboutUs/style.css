@@ -323,6 +323,10 @@
     }
 
     .about-us .section-blocks__row.row4 .row4__first {
-        height: 200px;
+        height: 170px;
+    }
+
+    .about-us .section-blocks__row.row1 > div{
+        height: 190px;
     }
 }

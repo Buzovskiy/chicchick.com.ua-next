@@ -16,9 +16,9 @@ export default function Home() {
          <Hero/>
          <AboutUs/>
          <OurService/>
-         {/*<BookCall/>*/}
-         {/*<WhyUs/>*/}
-         {/*<Gift/>*/}
+         <BookCall/>
+         <WhyUs/>
+         <Gift/>
          {/*<Team/>*/}
          {/*<Schedule/>*/}
          {/*<FAQ/>*/}

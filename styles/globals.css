@@ -46,6 +46,38 @@ body {
     left: 10px;
 }
 
+.input-section {
+    display: grid;
+}
+
+.input-section label {
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 1.5rem;
+    color: #EFBED4;
+    margin-bottom: 10px;
+}
+
+.input-section input {
+    background: none;
+    border: none;
+    border-bottom: solid 1px #FFF200;
+    padding: 1.25rem;
+    color: #EFBED4;
+    font-size: 1.5rem;
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    width: 100%;
+}
+
+.swiper-pagination-bullet{
+    background: #8A4170;
+    opacity: unset;
+}
+
+.swiper-pagination-bullet-active{
+    background: #E32C72;
+}
+
+
 @media (max-width: 1400px) {
     body, html {
         font-size: 14px;

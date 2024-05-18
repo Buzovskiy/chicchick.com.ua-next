@@ -9,7 +9,7 @@
 .book-call__heading {
     text-align: center;
     font-family: var(--shantell-sans-font), cursive;
-    font-size: 35px;
+    font-size: 2.1rem;
     color: #FFF200;
 }
 
@@ -17,34 +17,38 @@
     margin: 40px 0;
 }
 
-.book-call .input-section {
-    display: grid;
-}
-
-.book-call label {
-    font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 18px;
-    color: #EFBED4;
-}
-
-.book-call input {
-    background: none;
-    border: none;
-    border-bottom: solid 1px #FFF200;
-    padding: 10px;
-    color: #EFBED4;
-    font-size: 30px;
-    font-family: var(--evolventa-ragular-font), sans-serif;
-}
-
 .book-call .site-btn {
-    font-size: 35px;
-    padding: 10px 35px;
-    border-radius: 20px;
+    font-size: 2.1rem;
+    padding: 0.6rem 2.1rem;
 }
 
 .book-call .button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .book-call .input-section{
+        margin-bottom: 50px;
+    }
+
+    .book-call__form-wrapper{
+        margin: 0 0;
+    }
+}
+
+@media (max-width: 768px){
+    .book-call{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 576px){
+    .book-call{
+        background-image: url("../../public/img/stripe.png");
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position-y: 10px;
+    }
 }

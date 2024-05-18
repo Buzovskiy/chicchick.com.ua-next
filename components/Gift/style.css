@@ -1,12 +1,19 @@
 .gift__description {
     font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #EFBED4;
     display: flex;
     align-items: center;
     justify-content: left;
+    line-height: 1.7;
 }
 
-.gift__description p{
+.gift__description p {
     margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    .gift__description {
+        line-height: 1.6;
+    }
 }

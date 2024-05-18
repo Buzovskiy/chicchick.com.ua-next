@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import '@/styles/bootstrap-grid.css';
 import "@/styles/reset.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import "@/styles/globals.css";
 
 

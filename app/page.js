@@ -19,7 +19,7 @@ export default function Home() {
          <BookCall/>
          <WhyUs/>
          <Gift/>
-         {/*<Team/>*/}
+         <Team/>
          {/*<Schedule/>*/}
          {/*<FAQ/>*/}
          {/*<GalleryMain/>*/}

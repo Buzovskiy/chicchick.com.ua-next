@@ -7,6 +7,7 @@ import '@/styles/bootstrap-grid.css';
 import "@/styles/reset.css";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import "@/styles/globals.css";
 
 

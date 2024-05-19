@@ -1,0 +1,60 @@
+.swiper{
+    padding-bottom: 30px;
+}
+
+.photo {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 301px;
+    height: auto;
+}
+
+.name {
+    font-family: var(--shantell-sans-font), cursive;
+    font-size: 2.1rem;
+    color: #E32C72;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1.25rem;
+}
+
+.description{
+    font-family: var(--evolventa-ragular-font), sans-serif;
+    font-size: 1.1rem;
+    color: #EFBED4;
+    line-height: 1.7;
+}
+
+@media (max-width: 1400px) {
+    .photo img {
+        width: 353px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .photo img {
+        width: 293px;
+    }
+}
+
+@media (max-width: 992px) {
+    .photo img {
+        width: 214px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo img {
+        width: 251px;
+    }
+}
+
+@media (max-width: 400px) {
+    .photo img {
+        width: 100%;
+        max-width: 400px;
+    }
+}

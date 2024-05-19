@@ -77,6 +77,10 @@ body {
     background: #E32C72;
 }
 
+.swiper-button-prev, .swiper-button-next{
+    color: #E32C72;
+}
+
 
 @media (max-width: 1400px) {
     body, html {

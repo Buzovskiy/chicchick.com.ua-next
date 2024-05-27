@@ -1,12 +1,12 @@
 .schedule__wrapper {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 60%;
     grid-column-gap: 40px;
 }
 
 .schedule__subtitle {
     font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-transform: uppercase;
     color: #FFF200;
     text-align: center;
@@ -23,10 +23,10 @@
     background: unset;
     color: #FFF200;
     font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-transform: none;
     border: solid 1px #E32C72;
-    height: 76px;
+    height: 4.75rem;
 }
 
 .schedule__salon-btn-wrapper .site-btn.active,
@@ -44,12 +44,16 @@
     background: #FFF200;
     color: #381B3F;
     font-family: var(--shantell-sans-font), cursive;
-    font-size: 35px;
-    height: 76px;
+    font-size: 2.1rem;
+    height: 4.75rem;
 }
 
 .schedule__book-visit .site-btn:hover {
     background-color: #8a4170;
+}
+
+.schedule__book-visit.mobile {
+    display: none;
 }
 
 .schedule__choose-salon {
@@ -68,12 +72,12 @@
 }
 
 .schedule__days-list .site-btn {
-    width: 72px;
-    height: 80px;
+    width: 4.5rem;
+    height: 5rem;
     background: unset;
     color: #FFF200;
     font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-transform: none;
     border: solid 1px #E32C72;
     position: relative;
@@ -98,7 +102,7 @@
     bottom: -22px;
 }
 
-.schedule__masters-wrapper{
+.schedule__masters-wrapper {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -108,9 +112,74 @@
 .schedule .master-title {
     color: #E32C72;
     font-family: var(--shantell-sans-font), cursive;
-    font-size: 25px;
+    font-size: 1.56rem;
     padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .schedule__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 55%;
+        grid-column-gap: 40px;
+    }
+
+    .schedule__days-list .site-btn.active:after {
+        width: 27px;
+        height: 30px;
+        background-size: auto 30px;
+        right: -8px;
+        bottom: -13px;
+    }
+}
+
+@media (max-width: 992px) {
+    .schedule__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .schedule__book-visit.desktop {
+        display: none;
+    }
+
+    .schedule__book-visit.mobile {
+        display: grid;
+        grid-row-gap: 40px;
+    }
+
+    .schedule__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule__salon-btn-wrapper .site-btn {
+        max-width: 90%;
+        max-width: 380px;
+    }
+
+    .schedule__salon-btn-wrapper {
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+
+    .schedule__book-visit .schedule__subtitle {
+        order: 2;
+    }
+
+    .schedule__choose-day {
+        margin-bottom: 60px;
+    }
+
+    .schedule__book-visit .site-btn {
+        max-width: 330px;
+        justify-self: center;
+        position: relative;
+    }
+
+    .schedule__book-visit .site-btn img {
+        position: absolute;
+        left: -17px;
+        top: -20px;
+    }
 }
 

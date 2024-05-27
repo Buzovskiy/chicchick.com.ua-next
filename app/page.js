@@ -13,14 +13,14 @@ import GalleryMain from "@/components/GalleryMain";
 export default function Home() {
    return (
       <Fragment>
-         <Hero/>
-         <AboutUs/>
-         <OurService/>
-         <BookCall/>
-         <WhyUs/>
-         <Gift/>
-         <Team/>
-         {/*<Schedule/>*/}
+         {/*<Hero/>*/}
+         {/*<AboutUs/>*/}
+         {/*<OurService/>*/}
+         {/*<BookCall/>*/}
+         {/*<WhyUs/>*/}
+         {/*<Gift/>*/}
+         {/*<Team/>*/}
+         <Schedule/>
          {/*<FAQ/>*/}
          {/*<GalleryMain/>*/}
       </Fragment>

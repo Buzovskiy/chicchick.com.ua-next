@@ -27,6 +27,7 @@
     text-transform: none;
     border: solid 1px #E32C72;
     height: 4.75rem;
+    max-width: 380px;
 }
 
 .schedule__salon-btn-wrapper .site-btn.active,
@@ -154,7 +155,6 @@
 
     .schedule__salon-btn-wrapper .site-btn {
         max-width: 90%;
-        max-width: 380px;
     }
 
     .schedule__salon-btn-wrapper {
@@ -180,6 +180,22 @@
         position: absolute;
         left: -17px;
         top: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .schedule__days-list .site-btn {
+        width: 3.6rem;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .schedule__salon-btn-wrapper .site-btn{
+        font-size: 1.3rem;
+    }
+
+    .schedule__book-visit .site-btn img{
+        left: 5px;
     }
 }
 

@@ -188,6 +188,7 @@
         width: 3.6rem;
         height: 4rem;
         font-size: 1.2rem;
+        border-radius: 13px;
     }
 
     .schedule__salon-btn-wrapper .site-btn{

@@ -1,4 +1,5 @@
 import './style.css'
+import Image from "next/image";
 
 
 const Footer = () => {
@@ -8,12 +9,68 @@ const Footer = () => {
             <div className="footer__wrapper">
                <div className="footer__social">
                   <div className="footer__logo-social-wrapper">
-                     <div className="footer__logo"><img src="/img/logo-footer.png" alt=""/></div>
+                     <div className="footer__logo">
+                        <Image
+                           src="/img/logo-footer.png"
+                           alt="Замовити візит"
+                           width={0}
+                           height={0}
+                           sizes="100vw"
+                        />
+                     </div>
                      <div className="footer__social__wrapper">
-                        <div><a href="#"><img className="icon-shadow" src="/img/social-media/whatsapp.svg" alt=""/></a></div>
-                        <div><a href="#"><img className="icon-shadow" src="/img/social-media/telegram.svg" alt=""/></a></div>
-                        <div><a href="#"><img className="icon-shadow" src="/img/social-media/chat.svg" alt=""/></a></div>
-                        <div><a href="#"><img className="icon-shadow" src="/img/social-media/instagram.svg" alt=""/></a></div>
+                        <div>
+                           <a href="#">
+                              <Image
+                                 className="icon-shadow"
+                                 src="/img/social-media/whatsapp.svg"
+                                 alt="Замовити візит"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
+                                 style={{'width': '100%', 'height': 'auto'}}
+                              />
+                           </a>
+                        </div>
+                        <div>
+                           <a href="#">
+                              <Image
+                                 className="icon-shadow"
+                                 src="/img/social-media/telegram.svg"
+                                 alt="Замовити візит"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
+                                 style={{'width': '100%', 'height': 'auto'}}
+                              />
+                           </a>
+                        </div>
+                        <div>
+                           <a href="#">
+                              <Image
+                                 className="icon-shadow"
+                                 src="/img/social-media/chat.svg"
+                                 alt="Замовити візит"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
+                                 style={{'width': '100%', 'height': 'auto'}}
+                              />
+                           </a>
+                        </div>
+                        <div>
+                           <a href="#">
+                              <Image
+                                 className="icon-shadow"
+                                 src="/img/social-media/instagram.svg"
+                                 alt="Замовити візит"
+                                 width={0}
+                                 height={0}
+                                 sizes="100vw"
+                                 style={{'width': '100%', 'height': 'auto'}}
+                              />
+                           </a>
+                        </div>
                      </div>
                   </div>
                </div>

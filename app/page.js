@@ -21,8 +21,8 @@ export default function Home() {
          <Gift/>
          <Team/>
          <Schedule/>
-         {/*<FAQ/>*/}
-         {/*<GalleryMain/>*/}
+         <FAQ/>
+         <GalleryMain/>
       </Fragment>
    );
 }

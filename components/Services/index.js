@@ -1,11 +1,21 @@
+import Image from "next/image";
 import './style.css'
 
 
 const ServiceItem = () => {
    return (
-      <div className="col-lg-4">
+      <div className="col-sm-6 col-lg-4">
          <div className="service-item">
-            <div className="image-wrapper"><img src="/img/haircut.png" alt=""/></div>
+            <div className="image-wrapper">
+               <Image
+                  src="/img/haircut.png"
+                  alt="Замовити візит"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{'width': '100%', 'height': 'auto'}}
+               />
+            </div>
             <div className="description-wrapper">
                <div className="heading">Корекція довжини</div>
                <div className="description">

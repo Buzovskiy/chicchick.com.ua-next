@@ -1,19 +1,34 @@
 import './style.css'
+import Image from "next/image";
 
 
 const FirstHaircut = () => {
    return (
       <div className="container services-list">
-         <div className="row py-4 g-5">
-            <div className="col-lg-4 first-col-container">
+         <div className="row py-4 g-lg-5">
+            <div className="col-lg-4 order-2 order-lg-1 first-col-container">
                <div className="image-1-wrapper">
-                  <img src='/img/first-haircut/image-1.png' alt=""/>
+                  <Image
+                     src="/img/first-haircut/image-1.png"
+                     alt="Замовити візит"
+                     width={0}
+                     height={0}
+                     sizes="100vw"
+                     style={{'width': '100%', 'height': 'auto'}}
+                  />
                </div>
                <div className="image-3-wrapper">
-                  <img src="/img/first-haircut/image-3.png" alt=""/>
+                  <Image
+                     src="/img/first-haircut/image-3.png"
+                     alt="Замовити візит"
+                     width={0}
+                     height={0}
+                     sizes="100vw"
+                     style={{'width': '100%', 'height': 'auto'}}
+                  />
                </div>
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-8 order-1 order-lg-2">
                <div className="description-wrapper">
                   <div className="section-top">
                      <div className="section-heading first">Найпоширеніші запитання батьків</div>
@@ -26,7 +41,14 @@ const FirstHaircut = () => {
                      </p>
                   </div>
                   <div className="section-bottom">
-                     <img src="/img/first-haircut/image-2.png" alt=""/>
+                     <Image
+                        src="/img/first-haircut/image-2.png"
+                        alt="Замовити візит"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{'height': 'auto'}}
+                     />
                      <div className="section-heading second">Ми радимо вам:</div>
                      <ul>
                         <li>Створіть позитивний настрій</li>
@@ -34,14 +56,18 @@ const FirstHaircut = () => {
                            Розкажіть вашій дитині, що сьогодні вона стане справжньою зіркою моди
                         </li>
                         <li>
-                           Поділіться своїм захопленням та покажіть, як весело і цікаво буде провести час у нашому салоні
+                           Поділіться своїм захопленням та покажіть, як весело і цікаво буде провести час у нашому
+                           салоні
                         </li>
                         <li>на всяк випадок, змінну футболку, якщо волосся попаде на одежу</li>
                         <li>
-                           Врахуйте особливості волосся. Якщо у вашої дитини довге волосся, розгляньте можливість зробити його коротше перед стрижкою, щоб зменшити тривалість процесу та зробити його більш комфортним
+                           Врахуйте особливості волосся. Якщо у вашої дитини довге волосся, розгляньте можливість
+                           зробити його коротше перед стрижкою, щоб зменшити тривалість процесу та зробити його більш
+                           комфортним
                         </li>
                         <li>
-                           Зробіть наш салон місцем гри. У нашому салоні є багато різноманітних іграшок та книжок, які допоможуть розслабити вашу дитину та зробити процес стрижки більш веселим
+                           Зробіть наш салон місцем гри. У нашому салоні є багато різноманітних іграшок та книжок, які
+                           допоможуть розслабити вашу дитину та зробити процес стрижки більш веселим
                         </li>
                         <li>
                            не забудьте взяти з собою соску, пляшечку, улюблену іграшку, з якою дитині буде спокійніше

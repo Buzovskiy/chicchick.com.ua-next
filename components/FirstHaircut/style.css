@@ -1,24 +1,27 @@
 .services-list .section-heading.first {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .services-list .description-wrapper {
     font-family: "Evolventa", sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-transform: uppercase;
+}
+
+.services-list .section-top p,
+.services-list .section-bottom li {
+    line-height: 1.6;
 }
 
 .services-list .section-top p {
     color: #E32C72;
     margin-bottom: 30px;
-    line-height: 1.4;
 }
 
 .services-list .section-bottom li {
     color: #EFBED4;
     margin-bottom: 30px;
     list-style-type: disc;
-    line-height: 1.4;
 }
 
 .services-list .section-bottom img {
@@ -35,4 +38,12 @@
 
 .services-list .image-1-wrapper {
     flex-grow: 0.5;
+}
+
+@media (max-width: 576px) {
+    .services-list .section-bottom img {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
 }

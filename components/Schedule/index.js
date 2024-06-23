@@ -4,8 +4,8 @@ import './style.css'
 
 const Schedule = () => {
    return (
-      <div className="container schedule">
-         <div className="row py-5">
+      <div className="container section schedule">
+         <div className="row">
             <div className="col-12">
                <div className="section-heading">Графік роботи майстрів</div>
                <div className="schedule__wrapper">

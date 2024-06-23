@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const GalleryMain = () => {
    return (
-      <div className="container gallery-main">
-         <div className="row py-5">
+      <div className="container section gallery-main">
+         <div className="row">
             <div className="section-heading">Галерея наших робіт</div>
             <div className="gallery-main__wrapper desktop">
                <div className="group-1">

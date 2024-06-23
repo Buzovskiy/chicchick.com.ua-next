@@ -9,8 +9,8 @@ const FAQ = () => {
    const activeHandler = () => setActive( active ? '': 'active');
 
    return (
-      <div className="container faq">
-         <div className="row py-5">
+      <div className="container section faq">
+         <div className="row">
             <div className="section-heading">Найпоширеніші запитання батьків</div>
             <div className="faq__blocks-wrapper">
                <div className={'faq__wrapper' + ' ' + active}>

@@ -3,7 +3,7 @@ import './style.css'
 
 const BookCall = () => {
    return (
-      <div className="container">
+      <div className="container section">
          <div className="row py-5 mx-1 book-call">
             <div className="col-12 book-call__heading">Замовити зворотний дзвінок</div>
             <div className="col-12 p-5 pb-0 book-call__form-wrapper">

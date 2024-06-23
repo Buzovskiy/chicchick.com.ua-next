@@ -1,8 +1,3 @@
-.our-service .section-heading {
-    margin: 4.4rem 0;
-    text-align: center;
-}
-
 .our-service .section-blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,10 +35,6 @@
     .our-service .block .title{
         padding: 1.3rem 0;
         font-size: 1.8rem;
-    }
-
-    .our-service .section-heading{
-        margin-top: 0px;
     }
 }
 

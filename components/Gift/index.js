@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Gift = () => {
    return (
-      <div className="container gift">
-         <div className="row py-5">
+      <div className="container section gift">
+         <div className="row">
             <div className="section-heading">Подаруй першу зачіску в СHic Chick</div>
             <div className="col-12 gift__container">
                <div className="row">

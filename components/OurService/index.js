@@ -3,8 +3,8 @@ import './style.css'
 
 const OurService = () => {
    return (
-      <div className="container our-service">
-         <div className="row py-4">
+      <div className="container section our-service">
+         <div className="row">
             <div className="section-heading">Наші Послуги</div>
             <div className="section-blocks">
                <div className="block">

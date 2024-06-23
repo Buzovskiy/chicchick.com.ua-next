@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const AboutUs = () => {
    return (
-      <div className="container about-us">
-         <div className="row py-4">
+      <div className="container section about-us">
+         <div className="row">
             <div className="section-heading">
                <div className="about-us-logo">
                   <Image

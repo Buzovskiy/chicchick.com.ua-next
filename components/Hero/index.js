@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
    return (
-      <div className="container hero">
+      <div className="container section hero">
          <div className="row">
             <div className="col-md-7 order-2 order-md-1 hero-left">
                <div className="hero-left__logo">

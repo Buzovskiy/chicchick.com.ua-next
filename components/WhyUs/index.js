@@ -6,8 +6,8 @@ import BlocksMobile from "@/components/WhyUs/BlocksMobile";
 
 const WhyUs = () => {
    return (
-      <div className="container why-us">
-         <div className="row py-5">
+      <div className="container section why-us">
+         <div className="row">
             <div className="section-heading">Чому Батьки вибирають нас</div>
             <div className="blocks">
                {whyUsData.map((items_set, set_i) => items_set.map((item, i) => (

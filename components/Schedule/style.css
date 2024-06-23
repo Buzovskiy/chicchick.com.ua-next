@@ -137,7 +137,7 @@
 
 @media (max-width: 992px) {
     .schedule__subtitle {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .schedule__book-visit.desktop {

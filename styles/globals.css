@@ -29,7 +29,7 @@ body {
     text-transform: uppercase;
     font-size: 2.188rem;
     text-align: center;
-    margin: 70px 0;
+    margin: 0 0 3.75rem;
 }
 
 .icon-shadow {
@@ -68,17 +68,21 @@ body {
     width: 100%;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background: #8A4170;
     opacity: unset;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background: #E32C72;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev, .swiper-button-next {
     color: #E32C72;
+}
+
+.section {
+    margin-bottom: 10rem;
 }
 
 
@@ -96,10 +100,20 @@ body {
     body, html {
         font-size: 13px;
     }
+
+    .section {
+        margin-bottom: 7rem;
+    }
 }
 
 @media (max-width: 992px) {
     body, html {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        margin-bottom: 5rem;
     }
 }

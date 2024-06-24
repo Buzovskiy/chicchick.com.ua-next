@@ -44,3 +44,5 @@ next-env.d.ts
 passenger_wsgi.py
 stderr.log
 backend/tmp/
+
+__pycache__/

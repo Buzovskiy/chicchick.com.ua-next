@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.htaccess
+passenger_wsgi.py
+stderr.log
+backend/tmp/

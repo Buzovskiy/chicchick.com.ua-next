@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': decouple.config('DEFAULT_DB_ENGINE'),
-        'NAME': decouple.config('DEFAULT_DB_NAME'),
+        'ENGINE': decouple.config('DEFAULT_DB_ENGINE') or 'django.db.backends.sqlite3',
+        'NAME': decouple.config('DEFAULT_DB_NAME') or BASE_DIR / 'db.sqlite3',
         'USER': decouple.config('DEFAULT_DB_USER'),
         'PASSWORD': decouple.config('DEFAULT_DB_PASSWORD'),
         'HOST': decouple.config('DEFAULT_DB_HOST'),
@@ -123,7 +123,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/backend/static/'
+STATIC_ROOT = BASE_DIR / 'static'
+
+MEDIA_URL = '/backend/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

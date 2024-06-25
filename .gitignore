@@ -45,4 +45,8 @@ passenger_wsgi.py
 stderr.log
 backend/tmp/
 
-__pycache__/
+__pycache__
+db.sqlite3
+
+backend/static/
+backend/media/

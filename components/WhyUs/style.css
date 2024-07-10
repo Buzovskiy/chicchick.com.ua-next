@@ -11,6 +11,10 @@
     grid-column-gap: 40px;
 }
 
+.why-us .block-wrapper img{
+    width: 50px;
+}
+
 .why-us .block-text {
     font-family: var(--evolventa-ragular-font), sans-serif;
     font-size: 1.4rem;

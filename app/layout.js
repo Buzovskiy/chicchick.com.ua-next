@@ -21,11 +21,13 @@ export default function RootLayout({children}) {
       <html lang="uk">
       <body className={`${EvolventaRegular.variable} ${ShantellSans.variable}`}>
       <Image
-         width={92}
-         height={481}
+         width={0}
+         height={0}
          src="/img/body-stripe-vertical.png"
          alt="Дитяча перукарня"
+         sizes="100wv"
          className="body-stripe-vertical"
+         style={{'width': '92px', 'height': '481px'}}
       />
       <Header/>
       {children}

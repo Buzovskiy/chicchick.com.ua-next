@@ -14,10 +14,11 @@ const WhyUs = () => {
                   <div key={set_i + i} className="block-wrapper">
                      <Image
                         src={'/img/why-choose-us/' + item.img}
-                        width={50}
-                        height={50}
+                        width={0}
+                        height={0}
                         sizes="100vw"
                         alt="ДИТЯЧІ ПЕРУКАРНІ"
+                        styles={{'height': 'auto', 'width': 'auto'}}
                      />
                      <div className="block-text">{item.text}</div>
                   </div>

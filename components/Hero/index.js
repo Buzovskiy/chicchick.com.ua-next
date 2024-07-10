@@ -1,8 +1,16 @@
 import "./style.css"
 import Image from "next/image";
+// import {useRef} from "react";
+import {forwardRef} from "react";
 
 
 const Hero = () => {
+
+   const bookVisit = (e) => {
+      e.preventDefault();
+      console.log(555);
+   }
+
    return (
       <div className="container section hero">
          <div className="row">
@@ -19,7 +27,7 @@ const Hero = () => {
                </div>
                <div className="hero-left__tagline order-1">Дитячі перукарні в Одесі</div>
                <div className="hero-left__button order-3">
-                  <button className="site-btn">Запис на стрижку</button>
+                  <a href="#bookCall" className="site-btn">Запис на стрижку</a>
                </div>
                <div className="hero-left__tagline-2 order-4">
                   Перевiрене мiсце для дiтей та батькiв, де кожна стрижка &mdash; це весела пригода!

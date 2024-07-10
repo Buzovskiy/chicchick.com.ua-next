@@ -55,23 +55,29 @@ const Header = () => {
                         </Link>
                         <Link href="tel:+38O978O74O9O" className="phone--mobile">
                            <Image
-                              width={36}
-                              height={36}
+                              width={0}
+                              height={0}
+                              sizes="100vw"
+                              style={{"width": "36px", "height": "36px"}}
                               src="/img/phone-icon.png"
                               alt="Подзвонити"
                            />
                         </Link>
                         <span onClick={topMenuClickHandler} className="header-btn">
                            <Image
-                              width={43}
-                              height={32}
+                              width={0}
+                              height={0}
+                              sizes="100vw"
+                              style={{"width": "43px", "height": "32px"}}
                               src="/img/menu-icon.png"
                               alt="Дитяча перукарня"
                               className={`menu-open ${topMenuClass}`}
                            />
                            <Image
-                              width={43}
-                              height={32}
+                              width={0}
+                              height={0}
+                              sizes="100vw"
+                              style={{"width": "43px", "height": "32px"}}
                               src="/img/menu-icon-close.png"
                               alt="Дитяча перукарня"
                               className={`menu-close ${topMenuClass}`}

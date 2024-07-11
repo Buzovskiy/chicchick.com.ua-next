@@ -1,8 +1,8 @@
-import { Shantell_Sans } from "next/font/google";
 import localFont from 'next/font/local';
 
-const ShantellSans = Shantell_Sans({
-   subsets: ['cyrillic', 'cyrillic-ext', 'latin'],
+
+const ShantellSans = localFont({
+   src: '../public/fonts/Shantell_Sans/ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf',
    variable: '--shantell-sans-font'
 });
 

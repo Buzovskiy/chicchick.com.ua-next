@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 
     'staff',
     'service',
@@ -144,3 +145,5 @@ EMAIL_USE_TLS = decouple.config('EMAIL_USE_TLS') == 'True'
 FROM_EMAIL = decouple.config('FROM_EMAIL')
 
 MANAGERS = [manager.strip() for manager in decouple.config('MANAGERS').split(',')]
+
+BASE_URL = decouple.config('BASE_URL')

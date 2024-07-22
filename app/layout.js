@@ -21,7 +21,7 @@ export async function generateMetadata({params, searchParams}, parent) {
       title: metaTag.metaTitle,
       description: metaTag.metaDescription,
       openGraph: {
-         images: ['/img/og-image.png'],
+         images: [process.env.NEXT_PUBLIC_HOST+'/img/og-image.png'],
       },
    }
 }

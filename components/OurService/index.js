@@ -1,5 +1,6 @@
 'use client';
 import {useEffect, useState} from "react";
+import Link from "next/link";
 import './style.css'
 
 
@@ -23,10 +24,10 @@ const OurService = () => {
             <div className="section-blocks">
                {items.map(item => (
                   <div className="block" key={item.id}>
-                     <a href={`/services/${item.slug}`}>
+                     <Link href={`/services/${item.slug}`} alt="Стрижка">
                         <div className="photo-wrapper"><img src={item.imageUrl} alt={item.title}/></div>
                         <div className="title">{item.title}</div>
-                     </a>
+                     </Link>
                   </div>
                ))}
             </div>

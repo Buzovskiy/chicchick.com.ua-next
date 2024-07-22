@@ -4,7 +4,7 @@ import {getServicesBySlug} from "@/api/ServicesAPI";
 export async function generateMetadata({ params, searchParams }, parent) {
    const response = await getServicesBySlug(params.slug);
    const service = response.ok ? await response.json(): {};
-   const ogImage = service.services?.[0].imageUrl;
+   const ogImage = service.services?.[0]?.imageUrl;
    const ogImages = ogImage ? [ogImage] : (await parent).openGraph?.images
 
    return {

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'staff',
     'service',
+    'meta_tag',
 ]
 
 MIDDLEWARE = [

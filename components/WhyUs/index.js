@@ -6,7 +6,7 @@ import BlocksMobile from "@/components/WhyUs/BlocksMobile";
 
 const WhyUs = () => {
    return (
-      <div className="container section why-us">
+      <div className="container section why-us" id="whyUs">
          <div className="row">
             <div className="section-heading">Чому Батьки вибирають нас</div>
             <div className="blocks">

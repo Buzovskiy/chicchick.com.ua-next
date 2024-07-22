@@ -4,7 +4,7 @@ import Carousel from "@/components/Team/Carousel";
 const Team = () => {
 
    return (
-      <div className={'container section'}>
+      <div className={'container section'} id="ourTeam">
          <div className="row">
             <div>
                <div className="section-heading">Наша команда</div>

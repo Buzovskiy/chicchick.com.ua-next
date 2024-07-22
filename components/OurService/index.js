@@ -1,48 +1,34 @@
+'use client';
+import {useEffect, useState} from "react";
 import './style.css'
 
 
 const OurService = () => {
+
+   const [items, setItems] = useState([]);
+
+   useEffect(() => {
+      const fetchItems = async () => {
+         const response = await fetch(`${process.env.NEXT_PUBLIC_API}/services/`);
+         const items = await response.json();
+         setItems(items);
+      }
+      fetchItems().catch(console.error);
+   }, []);
+
    return (
-      <div className="container section our-service">
+      <div className="container section our-service" id="ourService">
          <div className="row">
             <div className="section-heading">Наші Послуги</div>
             <div className="section-blocks">
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/boys.png" alt=""/></div>
-                     <div className="title">Хлопчики</div>
-                  </a>
-               </div>
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/girls.png" alt=""/></div>
-                     <div className="title">Дівчата</div>
-                  </a>
-               </div>
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/adult.png" alt=""/></div>
-                     <div className="title">Дорослі</div>
-                  </a>
-               </div>
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/first-barber.png" alt=""/></div>
-                     <div className="title">Перша стрижка</div>
-                  </a>
-               </div>
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/hairstyle.png" alt=""/></div>
-                     <div className="title">Зачіски</div>
-                  </a>
-               </div>
-               <div className="block">
-                  <a href="#">
-                     <div className="photo-wrapper"><img src="/img/our-service/products.png" alt=""/></div>
-                     <div className="title">Догляд за волоссям</div>
-                  </a>
-               </div>
+               {items.map(item => (
+                  <div className="block" key={item.id}>
+                     <a href={`/services/${item.slug}`}>
+                        <div className="photo-wrapper"><img src={item.imageUrl} alt={item.title}/></div>
+                        <div className="title">{item.title}</div>
+                     </a>
+                  </div>
+               ))}
             </div>
          </div>
       </div>

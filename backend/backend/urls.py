@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('services/', include('service.urls')),
+    path('meta-tags/', include('meta_tag.urls')),
 ]
 
 if settings.DEBUG:

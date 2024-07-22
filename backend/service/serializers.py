@@ -8,11 +8,13 @@ class ServiceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Service
-        fields = ['title', 'imageUrl', 'description', 'price']
+        fields = ['id', 'title', 'imageUrl', 'description', 'price', 'price2']
 
 
 class ServiceCategorySerializer(serializers.ModelSerializer):
     imageUrl = serializers.ReadOnlyField(source='get_absolute_image_url')
+    metaTitle = serializers.ReadOnlyField(source='meta_title')
+    metaDescription = serializers.ReadOnlyField(source='meta_description')
     services = ServiceSerializer(source='service_set', many=True, read_only=True)
 
     @staticmethod
@@ -21,4 +23,5 @@ class ServiceCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ServiceCategory
-        fields = ['id', 'title', 'slug', 'imageUrl', 'services']
+        fields = ['id', 'title', 'slug', 'imageUrl',
+                  'services', 'metaTitle', 'metaDescription']

@@ -1,44 +1,40 @@
 import Image from "next/image";
 import './style.css'
+import {notFound} from "next/navigation";
+import {getServicesBySlug} from "@/api/ServicesAPI";
 
 
-const ServiceItem = () => {
-   return (
-      <div className="col-sm-6 col-lg-4">
-         <div className="service-item">
-            <div className="image-wrapper">
-               <Image
-                  src="/img/haircut.png"
-                  alt="Замовити візит"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{'width': '100%', 'height': 'auto'}}
-               />
-            </div>
-            <div className="description-wrapper">
-               <div className="heading">Корекція довжини</div>
-               <div className="description">
-                  Миття + сушка волосся додатково 250 грн
-               </div>
-               <div className="price">
-                  400...450 грн
-               </div>
-            </div>
-         </div>
-      </div>
-   )
-}
+const Services = async (props) => {
+   const params = props.params;
+   const response = await getServicesBySlug(params.slug);
+   if (response.status === 404) notFound();
+   const service_category = await response.json();
 
-
-const Services = () => {
    return (
       <div className="container services-list">
          <div className="row py-4 gx-3 gy-5">
-            <ServiceItem/>
-            <ServiceItem/>
-            <ServiceItem/>
-            <ServiceItem/>
+            {service_category.services.map(service => (
+               <div className="col-6 col-lg-4" key={service.id}>
+                  <div className="service-item">
+                     <div className="image-wrapper">
+                        <Image
+                           src={service.imageUrl}
+                           alt="Замовити візит"
+                           fill={true}
+                           sizes="'100vw'"
+                        />
+                     </div>
+                     <div className="description-wrapper">
+                        <div className="heading">{service.title}</div>
+                        <div className="description">{service.description}</div>
+                     </div>
+                     <div className="prices-wrapper">
+                        <div className="price">{service.price}</div>
+                        {service.price2 && <div className="price">{service.price2}</div>}
+                     </div>
+                  </div>
+               </div>
+            ))}
          </div>
       </div>
    )

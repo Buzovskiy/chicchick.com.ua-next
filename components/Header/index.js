@@ -31,12 +31,12 @@ const Header = () => {
                      </div>
                      <div className="site-nav">
                         <ul>
-                           <li>Про нас</li>
-                           <li>Послуги</li>
-                           <li>Переваги</li>
-                           <li>Запитання</li>
-                           <li>Відгуки</li>
-                           <li>Контакти</li>
+                           <li><Link href="#aboutUs">ПРО НАС</Link></li>
+                           <li><Link href="#ourService">Послуги</Link></li>
+                           <li><Link href="#whyUs">Переваги</Link></li>
+                           <li><Link href="#FAQ">Запитання</Link></li>
+                           <li><Link href="#ourTeam">команда</Link></li>
+                           <li><Link href="#footer">Контакти</Link></li>
                         </ul>
                      </div>
                      <div className="telephone">
@@ -95,12 +95,12 @@ const Header = () => {
                            className="header-stripe"
                         />
                         <ul>
-                           <li><Link id="home" className="menu-item" href="/">Про нас</Link></li>
-                           <li><Link id="about" className="menu-item" href="/">Послуги</Link></li>
-                           <li><Link id="contact" className="menu-item" href="/">Переваги</Link></li>
-                           <li><Link id="contact" className="menu-item" href="/">Запитання</Link></li>
-                           <li><Link id="contact" className="menu-item" href="/">ВІДГУКИ</Link></li>
-                           <li><Link id="contact" className="menu-item" href="/">Контакти</Link></li>
+                           <li><Link id="home" className="menu-item" href="#aboutUs">Про нас</Link></li>
+                           <li><Link id="about" className="menu-item" href="#ourService">Послуги</Link></li>
+                           <li><Link id="contact" className="menu-item" href="#whyUs">Переваги</Link></li>
+                           <li><Link id="contact" className="menu-item" href="#FAQ">Запитання</Link></li>
+                           <li><Link id="contact" className="menu-item" href="#ourTeam">команда</Link></li>
+                           <li><Link id="contact" className="menu-item" href="#footer">Контакти</Link></li>
                         </ul>
                         <Image
                            width={0}

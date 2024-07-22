@@ -63,9 +63,17 @@ class Service(models.Model):
     title = models.CharField(_('Title'), max_length=100)
     image = models.ImageField(_('Image'), upload_to='images/service', null=True, blank=True)
     description = models.TextField(_('Description'), null=True, blank=True)
-    price = models.TextField(_('Price'), null=True, blank=True)
+    price = models.CharField(_('Price'), max_length=255, null=True, blank=True)
+    price2 = models.CharField(_('Price2'), max_length=255, null=True, blank=True)
 
     objects = models.Manager()
+
+    @property
+    def get_absolute_image_url(self):
+        try:
+            return "{0}{1}".format(settings.BASE_URL, self.image.url)
+        except ValueError:
+            return ''
 
     def __str__(self):
         return self.title

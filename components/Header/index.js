@@ -3,6 +3,7 @@ import {useState} from "react";
 import "./style.css";
 import Link from "next/link";
 import Image from "next/image";
+import {siteUrl} from "@/utils/urls";
 
 const Header = () => {
    const [topMenuClass, topMenuClassSet] = useState('');
@@ -31,12 +32,12 @@ const Header = () => {
                      </div>
                      <div className="site-nav">
                         <ul>
-                           <li><Link href="#aboutUs">ПРО НАС</Link></li>
-                           <li><Link href="#ourService">Послуги</Link></li>
-                           <li><Link href="#whyUs">Переваги</Link></li>
-                           <li><Link href="#FAQ">Запитання</Link></li>
-                           <li><Link href="#ourTeam">команда</Link></li>
-                           <li><Link href="#footer">Контакти</Link></li>
+                           <li><Link href={siteUrl('#aboutUs')}>ПРО НАС</Link></li>
+                           <li><Link href={siteUrl("#ourService")}>Послуги</Link></li>
+                           <li><Link href={siteUrl("#whyUs")}>Переваги</Link></li>
+                           <li><Link href={siteUrl("#FAQ")}>Запитання</Link></li>
+                           <li><Link href={siteUrl("#ourTeam")}>команда</Link></li>
+                           <li><Link href={siteUrl("#footer")}>Контакти</Link></li>
                         </ul>
                      </div>
                      <div className="telephone">

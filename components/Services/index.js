@@ -21,7 +21,7 @@ const Services = async (props) => {
                            src={service.imageUrl}
                            alt="Замовити візит"
                            fill={true}
-                           sizes="'100vw'"
+                           sizes="100vw"
                         />
                      </div>
                      <div className="description-wrapper">

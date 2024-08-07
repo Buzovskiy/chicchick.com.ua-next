@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('services/', include('service.urls')),
     path('meta-tags/', include('meta_tag.urls')),
+    path('staff/', include('staff.urls')),
 ]
 
 if settings.DEBUG:

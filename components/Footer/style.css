@@ -75,7 +75,7 @@
 }
 
 .footer__location .telephone a {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .footer__location .telephone a:hover {

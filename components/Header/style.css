@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 45px;
+    margin-bottom: 0;
 }
 
 .site-nav, .header-wrapper .telephone {

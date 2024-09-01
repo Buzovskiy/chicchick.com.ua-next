@@ -34,11 +34,21 @@
 }
 
 .service-item .prices-wrapper {
-    color: #E32C72;
+    color: var(--color-pink);
     font-family: var(--shantell-sans-font), cursive;
     font-size: 1.3rem;
     text-align: center;
     margin: 1.25rem 0;
+}
+
+.services-list .site-btn-wrapper {
+    margin-top: 5rem;
+    display: none;
+}
+
+.services-list .site-btn {
+    font-size: 2rem;
+    padding: 1rem 2rem;
 }
 
 @media (max-width: 1400px) {
@@ -86,15 +96,12 @@
         height: 430px;
     }
 
-    .service-item .image-wrapper{
+    .service-item .image-wrapper {
         height: 56%;
     }
 
-    /*.service-item .description {*/
-    /*    padding: 7px;*/
-    /*}*/
-
-    /*.service-item .heading {*/
-    /*    margin: 1rem 0 0.6rem;*/
-    /*}*/
+    .services-list .site-btn-wrapper {
+        margin-top: 5rem;
+        display: block;
+    }
 }

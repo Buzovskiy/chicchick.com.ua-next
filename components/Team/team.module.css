@@ -16,7 +16,7 @@
 .name {
     font-family: var(--shantell-sans-font), cursive;
     font-size: 2.1rem;
-    color: #E32C72;
+    color: var(--color-pink);
     text-transform: uppercase;
     text-align: center;
     margin: 1.25rem;

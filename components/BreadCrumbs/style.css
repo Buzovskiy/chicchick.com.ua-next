@@ -1,6 +1,6 @@
 .breadcrumb {
     font-family: var(--shantell-sans-font), cursive;
-    color: #E32C72;
+    color: var(--color-pink);
     font-size: 16px;
     text-transform: uppercase;
 }

@@ -8,7 +8,7 @@
 .our-service .photo-wrapper {
     background-color: white;
     border-radius: 20px;
-    box-shadow: #E32C72 0 0 13px -3px;
+    box-shadow: var(--color-pink) 0 0 13px -3px;
     overflow: hidden;
     position: relative;
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import './style.css'
 import {notFound} from "next/navigation";
 import {getServicesBySlug} from "@/api/ServicesAPI";
+import BookBtn from "@/components/Services/book-btn";
 
 
 const Services = async (props) => {
@@ -36,6 +37,7 @@ const Services = async (props) => {
                </div>
             ))}
          </div>
+         <BookBtn/>
       </div>
    )
 }

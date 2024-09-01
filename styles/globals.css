@@ -1,15 +1,21 @@
+:root{
+    --color-lilac: #381B3F;
+    --color-pale-pink: #FFC1E9;
+    --color-pink: #E32C72;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 body {
-    background-color: #381B3F;
+    background-color: var(--color-lilac);
 }
 
 .site-btn {
     font-family: var(--shantell-sans-font), cursive;
-    color: #381B3F;
+    color: var(--color-lilac);
     background-color: #FDEB03;
     border: none;
     font-weight: 500;
@@ -74,17 +80,16 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background: #E32C72;
+    background: var(--color-pink);
 }
 
 .swiper-button-prev, .swiper-button-next {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .section {
     margin-bottom: 10rem;
 }
-
 
 @media (max-width: 1400px) {
     body, html {
@@ -117,3 +122,11 @@ body {
         margin-bottom: 5rem;
     }
 }
+
+/*bootstrap*/
+.modal{
+    --bs-modal-bg: var(--color-lilac);
+    --bs-heading-color: var(--color-pale-pink);
+    --bs-btn-close-color: var(--color-pale-pink);
+}
+

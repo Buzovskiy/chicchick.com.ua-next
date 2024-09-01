@@ -85,14 +85,14 @@
 /*row 1*/
 .about-us .row1__first {
     background-color: #C0E0F7;
-    color: #381B3F;
+    color: var(--color-lilac);
     padding: 2.5rem 3.7rem;
     position: relative;
     z-index: 1;
 }
 
 .about-us .row1__first .highlighted {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .about-us .row1__second {
@@ -107,7 +107,7 @@
 
 .about-us .row1__third {
     background-color: #FFF200;
-    color: #381B3F;
+    color: var(--color-lilac);
 }
 
 .about-us .row1__third .highlighted {
@@ -117,7 +117,7 @@
 /*row 2*/
 .about-us .row2__second {
     background-color: #8A4170;
-    color: #FFC1E9;
+    color: var(--color-pale-pink);
 }
 
 .about-us .row2 img {
@@ -131,16 +131,16 @@
 /*row 3*/
 .about-us .row3__first {
     background-color: #FFF200;
-    color: #381B3F;
+    color: var(--color-lilac);
     padding: 40px 10%;
 }
 
 .about-us .row3__first .highlighted {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .about-us .row3__second {
-    background-color: #E32C72;
+    background-color: var(--color-pink);
     color: #FFF200;
 }
 
@@ -176,11 +176,11 @@
 
 .about-us .row4__third {
     background-color: #C0E0F7;
-    color: #381B3F;
+    color: var(--color-lilac);
 }
 
 .about-us .row4__third .highlighted {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .about-us .about-us-stripe {

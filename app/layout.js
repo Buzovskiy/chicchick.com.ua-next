@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
-import '@/styles/bootstrap-grid.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "@/styles/reset.css";
 import 'swiper/css';
 import 'swiper/css/pagination';

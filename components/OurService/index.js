@@ -1,22 +1,21 @@
-'use client';
-import {useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import './style.css'
 
 
-const OurService = () => {
+const OurService = async () => {
 
-   const [items, setItems] = useState([]);
+   const data = await fetch(`${process.env.NEXT_PUBLIC_API}/services/`)
+   const items = await data.json();
 
-   useEffect(() => {
-      const fetchItems = async () => {
-         const response = await fetch(`${process.env.NEXT_PUBLIC_API}/services/`);
-         const items = await response.json();
-         setItems(items);
-      }
-      fetchItems().catch(console.error);
-   }, []);
+   // useEffect(() => {
+   //    const fetchItems = async () => {
+   //       const response = await fetch();
+   //       const items = await response.json();
+   //       setItems(items);
+   //    }
+   //    fetchItems().catch(console.error);
+   // }, []);
 
    return (
       <div className="container section our-service" id="ourService">

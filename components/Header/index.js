@@ -96,12 +96,12 @@ const Header = () => {
                            className="header-stripe"
                         />
                         <ul>
-                           <li><Link id="home" className="menu-item" href="#aboutUs">Про нас</Link></li>
-                           <li><Link id="about" className="menu-item" href="#ourService">Послуги</Link></li>
-                           <li><Link id="contact" className="menu-item" href="#whyUs">Переваги</Link></li>
-                           <li><Link id="contact" className="menu-item" href="#FAQ">Запитання</Link></li>
-                           <li><Link id="contact" className="menu-item" href="#ourTeam">команда</Link></li>
-                           <li><Link id="contact" className="menu-item" href="#footer">Контакти</Link></li>
+                           <li><Link id="home" className="menu-item" href={siteUrl('#aboutUs')}>Про нас</Link></li>
+                           <li><Link id="about" className="menu-item" href={siteUrl('#ourService')}>Послуги</Link></li>
+                           <li><Link id="contact" className="menu-item" href={siteUrl('#whyUs')}>Переваги</Link></li>
+                           <li><Link id="contact" className="menu-item" href={siteUrl('#FAQ')}>Запитання</Link></li>
+                           <li><Link id="contact" className="menu-item" href={siteUrl('#ourTeam')}>команда</Link></li>
+                           <li><Link id="contact" className="menu-item" href={siteUrl('#footer')}>Контакти</Link></li>
                         </ul>
                         <Image
                            width={0}

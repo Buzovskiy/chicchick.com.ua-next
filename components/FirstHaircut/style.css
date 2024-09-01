@@ -14,7 +14,7 @@
 }
 
 .services-list .section-top p {
-    color: #E32C72;
+    color: var(--color-pink);
     margin-bottom: 30px;
 }
 
@@ -40,10 +40,29 @@
     flex-grow: 0.5;
 }
 
+.first-haircut__book-call-btn{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: none;
+}
+
 @media (max-width: 576px) {
+    .first-haircut__book-call-btn__wrapper{
+        text-align: center;
+    }
+
     .services-list .section-bottom img {
         width: 100%;
         float: none;
         padding: 0;
+    }
+
+    .first-haircut__book-call-btn{
+        display: inline-block;
+        margin-bottom: 5rem;
+    }
+
+    .services-list.first-haircut .section-bottom img{
+        margin-bottom: 5rem;
     }
 }

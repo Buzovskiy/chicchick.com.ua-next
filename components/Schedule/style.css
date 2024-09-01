@@ -23,9 +23,9 @@
     background: unset;
     color: #FFF200;
     font-family: var(--evolventa-ragular-font), sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     text-transform: none;
-    border: solid 1px #E32C72;
+    border: solid 1px var(--color-pink);
     height: 4.75rem;
     max-width: 380px;
 }
@@ -37,13 +37,13 @@
 }
 
 .schedule__book-visit .schedule__subtitle {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .schedule__book-visit .site-btn {
     width: 100%;
     background: #FFF200;
-    color: #381B3F;
+    color: var(--color-lilac);
     font-family: var(--shantell-sans-font), cursive;
     font-size: 2.1rem;
     height: 4.75rem;
@@ -63,7 +63,7 @@
 }
 
 .schedule__book-visit {
-    margin-top: auto;
+    margin-top: 4rem;
 }
 
 .schedule__days-list {
@@ -79,8 +79,8 @@
     color: #FFF200;
     font-family: var(--evolventa-ragular-font), sans-serif;
     font-size: 1.375rem;
-    text-transform: none;
-    border: solid 1px #E32C72;
+    text-transform: uppercase;
+    border: solid 1px var(--color-pink);
     position: relative;
 }
 
@@ -110,8 +110,12 @@
     grid-gap: 20px;
 }
 
+.schedule__master-container img{
+    border-radius: 1.2rem;
+}
+
 .schedule .master-title {
-    color: #E32C72;
+    color: var(--color-pink);
     font-family: var(--shantell-sans-font), cursive;
     font-size: 1.56rem;
     padding: 20px 0;
@@ -137,7 +141,11 @@
 
 @media (max-width: 992px) {
     .schedule__subtitle {
-        margin-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .schedule__masters-wrapper{
+        margin-top: 10px;
     }
 
     .schedule__book-visit.desktop {
@@ -147,6 +155,7 @@
     .schedule__book-visit.mobile {
         display: grid;
         grid-row-gap: 40px;
+        margin-top: unset;
     }
 
     .schedule__wrapper {

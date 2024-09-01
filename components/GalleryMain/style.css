@@ -40,7 +40,7 @@
 }
 
 .gallery-main__link a:hover {
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .gallery-main__link img {

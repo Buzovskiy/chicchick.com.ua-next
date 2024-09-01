@@ -3,7 +3,7 @@
     grid-row-gap: 20px;
 }
 .faq__wrapper {
-    border: solid 1px #E32C72;
+    border: solid 1px var(--color-pink);
     border-radius: 20px;
     padding: 10px;
     font-family: var(--evolventa-ragular-font), sans-serif;
@@ -43,7 +43,7 @@
 }
 
 .faq__question-block:hover .faq__question{
-    color: #E32C72;
+    color: var(--color-pink);
 }
 
 .faq__icon {
@@ -59,7 +59,7 @@
 .faq__answer-block__center:before {
     content: '';
     display: block;
-    border-top: solid 1px #E32C72;
+    border-top: solid 1px var(--color-pink);
     position: absolute;
     top: 0;
     width: 104%;

@@ -4,7 +4,7 @@
 }
 
 .hero-left__tagline, .hero-left__tagline-2 {
-    color: #FFC1E9;
+    color: var(--color-pale-pink);
     font-family: var(--evolventa-ragular-font), sans-serif;
 }
 

@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'staff',
     'service',
     'meta_tag',
+    'salon',
+    'message',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +148,8 @@ MANAGERS = [manager.strip() for manager in decouple.config('MANAGERS').split(','
 BASE_URL = decouple.config('BASE_URL')
 
 CORS_ALLOWED_ORIGINS = [origin.strip() for origin in decouple.config('CORS_ALLOWED_ORIGINS').split(',')]
+
+TELEGRAM_BOT_TOKEN = decouple.config('TELEGRAM_BOT_TOKEN')
+
+# Group chat id, where bot sends notifications
+TELEGRAM_GROUP_CHAT_ID = decouple.config('TELEGRAM_GROUP_CHAT_ID')

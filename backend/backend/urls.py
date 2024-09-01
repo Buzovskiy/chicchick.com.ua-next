@@ -24,6 +24,8 @@ urlpatterns = [
     path('services/', include('service.urls')),
     path('meta-tags/', include('meta_tag.urls')),
     path('staff/', include('staff.urls')),
+    path('salon/', include('salon.urls')),
+    path('message/', include('message.urls')),
 ]
 
 if settings.DEBUG:

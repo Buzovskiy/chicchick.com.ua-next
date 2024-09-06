@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'django_ckeditor_5',
 
     'staff',
     'service',
     'meta_tag',
     'salon',
     'message',
+    'faq',
 ]
 
 MIDDLEWARE = [
@@ -153,3 +155,10 @@ TELEGRAM_BOT_TOKEN = decouple.config('TELEGRAM_BOT_TOKEN')
 
 # Group chat id, where bot sends notifications
 TELEGRAM_GROUP_CHAT_ID = decouple.config('TELEGRAM_GROUP_CHAT_ID')
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': ['heading', '|', 'bold', 'italic', 'link',
+                    'bulletedList', 'numberedList', 'sourceEditing', ],
+    },
+}

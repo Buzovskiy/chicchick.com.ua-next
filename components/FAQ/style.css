@@ -25,6 +25,10 @@
     transition: max-height 0.25s ease-out;
 }
 
+.faq__answer-block ul li{
+    list-style-type: disc;
+}
+
 .faq__wrapper.active .faq__answer-block{
     max-height: 500px;
     transition: max-height 0.2s ease-in;
@@ -44,6 +48,10 @@
 
 .faq__question-block:hover .faq__question{
     color: var(--color-pink);
+}
+
+.faq__question-block:hover .faq__icon{
+    filter: var(--filter-icon-hover);
 }
 
 .faq__icon {

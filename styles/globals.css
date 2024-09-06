@@ -2,6 +2,7 @@
     --color-lilac: #381B3F;
     --color-pale-pink: #FFC1E9;
     --color-pink: #E32C72;
+    --filter-icon-hover: drop-shadow(0px 0px 4px red);
 }
 
 a {
@@ -43,7 +44,7 @@ body {
 }
 
 .icon-shadow:hover {
-    filter: drop-shadow(0px 0px 4px red);
+    filter: var(--filter-icon-hover);
 }
 
 .body-stripe-vertical {

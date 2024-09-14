@@ -27,6 +27,7 @@ urlpatterns = [
     path('salon/', include('salon.urls')),
     path('message/', include('message.urls')),
     path('faq/', include('faq.urls')),
+    path('gallery/', include('gallery.urls')),
 ]
 
 urlpatterns += [path("ckeditor5/", include('django_ckeditor_5.urls'))]

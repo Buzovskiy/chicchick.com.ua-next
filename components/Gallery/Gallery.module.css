@@ -1,0 +1,21 @@
+.image-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-wrapper img{
+    border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .image-wrapper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .image-wrapper {
+        height: 250px;
+    }
+}

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'salon',
     'message',
     'faq',
+    'gallery',
 ]
 
 MIDDLEWARE = [

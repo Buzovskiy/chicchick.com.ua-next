@@ -14,7 +14,9 @@
     "react": "^18",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
+    "react-grid-gallery": "^1.0.1",
     "react-scroll": "^1.9.0",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "yet-another-react-lightbox": "^3.21.4"
   }
 }

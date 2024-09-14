@@ -10,6 +10,7 @@ import Schedule from "@/components/Schedule";
 import FAQ from "@/components/FAQ";
 import GalleryMain from "@/components/GalleryMain";
 
+
 export default function Home() {
    return (
       <Fragment>

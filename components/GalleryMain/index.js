@@ -14,7 +14,7 @@ const GalleryMain = async () => {
          <div className="row">
             <div className="section-heading">Галерея наших робіт</div>
             <div className="gallery-main__wrapper desktop">
-               {galleryData &&
+               {galleryData.length > 0 &&
                   <>
                      <div className="group-1">
                         <div className="image-container">

@@ -151,6 +151,7 @@ MANAGERS = [manager.strip() for manager in decouple.config('MANAGERS').split(','
 BASE_URL = decouple.config('BASE_URL')
 
 CORS_ALLOWED_ORIGINS = [origin.strip() for origin in decouple.config('CORS_ALLOWED_ORIGINS').split(',')]
+CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in decouple.config('CSRF_TRUSTED_ORIGINS').split(',')]
 
 TELEGRAM_BOT_TOKEN = decouple.config('TELEGRAM_BOT_TOKEN')
 

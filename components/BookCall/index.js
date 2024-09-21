@@ -21,9 +21,7 @@ const BookCall = () => {
    const onSubmit = async (event) => {
       event.preventDefault();
       const formData = new FormData();
-      console.log(name);
       formData.append('name', name);
-      console.log(phone);
       formData.append('phone', phone);
       try {
          const response = await fetch(`${process.env.NEXT_PUBLIC_API}/message/send/`, {

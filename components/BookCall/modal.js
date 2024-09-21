@@ -28,7 +28,7 @@ function BookCallModal({show, setShow, showSuccess, setShowSuccess}) {
       event.preventDefault();
       const formData = new FormData();
       formData.append('name', name);
-      formData.append('phone', name);
+      formData.append('phone', phone);
       try {
          const response = await fetch(`${process.env.NEXT_PUBLIC_API}/message/send/`, {
             method: "POST",

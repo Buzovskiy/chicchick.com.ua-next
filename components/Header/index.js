@@ -79,7 +79,7 @@ const Header = () => {
                               alt="Дитяча перукарня"
                            />
                         </Link>
-                        <Link href="tel:+38O978O74O9O" className="phone--mobile">
+                        <Link href={`tel:${phoneIso}`} className="phone--mobile">
                            <Image
                               width={0}
                               height={0}

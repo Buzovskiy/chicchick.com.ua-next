@@ -52,6 +52,10 @@
     z-index: 2;
 }
 
+.modal-book-call .book-call__heading.phone-us{
+    font-size: 1.8rem;
+}
+
 .modal-book-call .success-content {
     text-align: left;
     font-family: var(--evolventa-ragular-font), sans-serif;
@@ -114,7 +118,7 @@
 
 @media (max-width: 576px) {
     .modal-book-call .modal-content {
-        height: 80vh;
+        height: 85vh;
     }
 
     .modal-book-call .book-call {

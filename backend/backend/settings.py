@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'message',
     'faq',
     'gallery',
+    'social',
 ]
 
 MIDDLEWARE = [

@@ -10,7 +10,7 @@ const FAQ = () => {
 
    useEffect(() => {
       const fetchData = async () => {
-         let res = await fetch(`${process.env.NEXT_PUBLIC_API}/faq/`)
+         let res = await fetch(`${process.env.NEXT_PUBLIC_API}/faq/`, {cache: 'no-store'})
          let data = await res.json()
          setQuestions(data)
       }

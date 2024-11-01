@@ -44,7 +44,7 @@ const Schedule = () => {
    const [salonState, salonDispatch] = useReducer(salonReducer, initialSalonState, undefined);
 
    useEffect(() => {
-      fetch(`${process.env.NEXT_PUBLIC_API}/salon/list/`)
+      fetch(`${process.env.NEXT_PUBLIC_API}/salon/list/`, {cache: 'no-store'})
          .then((response) => {
             if (response.ok) {
                response.json().then((salonsList) => {

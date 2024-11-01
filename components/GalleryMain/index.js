@@ -6,7 +6,7 @@ import {notFound} from "next/navigation";
 
 
 const GalleryMain = async () => {
-   const response = await fetch(`${process.env.NEXT_PUBLIC_API}/gallery?limit=6`);
+   const response = await fetch(`${process.env.NEXT_PUBLIC_API}/gallery?limit=6`, {cache: 'no-store'});
    const galleryData = await response.json();
 
    return (

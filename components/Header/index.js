@@ -1,5 +1,5 @@
 'use client';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import "./style.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,10 +7,35 @@ import {siteUrl} from "@/utils/urls";
 
 const Header = () => {
    const [topMenuClass, topMenuClassSet] = useState('');
+   const [phone, setPhone] = useState('');
+   const [phoneIso, setPhoneIso] = useState('');
+
    const topMenuClickHandler = (event) => {
       event.preventDefault();
       topMenuClassSet(topMenuClass ? '' : 'active');
    }
+
+   const urlQueryParams = new URLSearchParams({
+      keys: 'top_header_phone,top_header_phone_iso'
+   })
+
+   useEffect(() => {
+      const fetchData = async () => {
+         try {
+            let res = await fetch(`${process.env.NEXT_PUBLIC_API}/salon/settings?${urlQueryParams.toString()}`, {cache: 'no-store'});
+            if (!res.ok) {
+               throw new Error(`Request failed with status ${res.status}`);
+            }
+            let data = await res.json();
+            setPhone(data.top_header_phone);
+            setPhoneIso(data.top_header_phone_iso);
+         } catch (error) {
+            console.error("Error fetching data:", error);
+         }
+      }
+
+      fetchData();
+   }, [])
 
    return (
       <>
@@ -41,7 +66,7 @@ const Header = () => {
                         </ul>
                      </div>
                      <div className="telephone">
-                        <a className="phone" href="tel:+38O978O74O9O">+38 (O97) 8O7 4O 9O</a>
+                        <a className="phone" href={`tel:${phoneIso}`}>{phone}</a>
                      </div>
                   </div>
                   <div className="header-wrapper--mobile">

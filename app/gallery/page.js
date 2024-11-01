@@ -4,7 +4,7 @@ import GalleryWrapper from "@/components/Gallery";
 
 
 export default async function GalleryPage() {
-   const response = await fetch(`${process.env.NEXT_PUBLIC_API}/gallery/`);
+   const response = await fetch(`${process.env.NEXT_PUBLIC_API}/gallery/`, {cache: 'no-store'});
    if (!response.ok)
       notFound();
    const galleryData = await response.json();

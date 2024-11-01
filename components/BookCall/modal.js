@@ -2,13 +2,15 @@
 import Modal from 'react-bootstrap/Modal';
 import "./book-call-modal.css";
 import Image from "next/image";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 function BookCallModal({show, setShow, showSuccess, setShowSuccess}) {
 
    const [name, setName] = useState('');
    const [phone, setPhone] = useState('');
+   const [phoneCallBack, setPhoneCallBack] = useState('');
+   const [phoneIsoCallBack, setPhoneIsoCallBack] = useState('');
    const handleClose = () => {
       setShow(false);
       setTimeout(() => {
@@ -43,6 +45,28 @@ function BookCallModal({show, setShow, showSuccess, setShowSuccess}) {
          console.log(e)
       }
    }
+
+   const urlQueryParams = new URLSearchParams({
+      keys: 'top_header_phone,top_header_phone_iso'
+   })
+
+   useEffect(() => {
+      const fetchData = async () => {
+         try {
+            let res = await fetch(`${process.env.NEXT_PUBLIC_API}/salon/settings?${urlQueryParams.toString()}`, {cache: 'no-store'});
+            if (!res.ok) {
+               throw new Error(`Request failed with status ${res.status}`);
+            }
+            let data = await res.json();
+            setPhoneCallBack(data.top_header_phone);
+            setPhoneIsoCallBack(data.top_header_phone_iso);
+         } catch (error) {
+            console.error("Error fetching data:", error);
+         }
+      }
+
+      fetchData();
+   }, [])
 
    return (
       <Modal
@@ -126,9 +150,8 @@ function BookCallModal({show, setShow, showSuccess, setShowSuccess}) {
                      </form>
                   </div>
                   <div className="row">
-                     <div className="col-12 p-5 pb-0 pt-5 pt-xl-0 book-call__heading">
-                        Або зателефонуйте нам за номером <a className="phone" href="tel:+38O978O74O9O">+38 (O97) 8O7 4O
-                        9O</a>
+                     <div className="col-12 p-5 pb-0 pt-5 pt-xl-0 book-call__heading phone-us">
+                        Або зателефонуйте нам за номером <a className="phone" href={`tel:${phoneIsoCallBack}`}>{phoneCallBack}</a>
                      </div>
                   </div>
                </div>

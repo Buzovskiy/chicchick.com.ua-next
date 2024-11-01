@@ -5,17 +5,8 @@ import './style.css'
 
 const OurService = async () => {
 
-   const data = await fetch(`${process.env.NEXT_PUBLIC_API}/services/`)
+   const data = await fetch(`${process.env.NEXT_PUBLIC_API}/services/`, {cache: 'no-store'})
    const items = await data.json();
-
-   // useEffect(() => {
-   //    const fetchItems = async () => {
-   //       const response = await fetch();
-   //       const items = await response.json();
-   //       setItems(items);
-   //    }
-   //    fetchItems().catch(console.error);
-   // }, []);
 
    return (
       <div className="container section our-service" id="ourService">
